@@ -1,0 +1,30 @@
+<!doctype html>
+<link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='css/main.css') }}">
+
+<div class="masterdiv">
+      <div class="container">
+              <strong><nav>
+                <ul class="menu">
+                  <li><a href="{{ url_for('home') }}">Home</a></li>
+                  <li><a href="{{ url_for('about') }}">About</a></li>
+                </ul>
+              </nav></strong>
+            </div>
+      
+    
+          <h1>Tim Tim gift</h1>
+          
+              <h2 >Hint number {{ hintnumber }}:</h2>
+              <h2 >{{ result }}</h2>
+              <div class="hintbox">
+                      {{ hint }}
+              </div>
+              
+              <form class="inputform" action="refresh" method="post">
+                    <textarea name="text"></textarea>
+                    <br>
+                    <input type="Submit" onclick='this.form.action="previous?hintnumber={{ hintnumber }}";' value="Previous hint">
+                    <input type="submit" onclick='this.form.action="next?hintnumber={{ hintnumber }}";'  value="Validate">
+              </form>
+  </div>
+

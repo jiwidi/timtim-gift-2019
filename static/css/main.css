@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+* { 
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	box-sizing: border-box;
+	font-family: 'VT323', monospace;
+	font-size:1.16rem;
+}
+
+
+div{
+  text-align: center;
+}
+body {
+  background-color:rgb(234, 70, 48);
+  height: 100%;
+  padding: 30px;
+}
+li {
+  letter-spacing: 5px;
+  style: bold;
+  font-weight: bold;
+}
+h1{
+  font-size: 7em;
+  text-align: center;
+}
+h2{
+  font-size: 2em;
+  text-align: center;
+}
+.center-block{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+html{
+    height: 100%;
+    margin: auto;
+    overflow: scroll;
+}
+.endddiv{
+  position: absolute;
+  bottom: 0;
+}
+.masterdiv{
+  height: 100%;
+}
+
+.menu {
+  float: right;
+  margin-top: 8px;
+}
+.menu li {
+  display: inline;
+}
+.menu li + li {
+  margin-left: 35px;
+}
+.menu li a {
+  color: #444;
+  text-decoration: none;
+}
+.container {
+  background-color: rgb(20, 107, 58);
+}
+.hintbox{
+  font-size: 1.0em;
+  font-family: 'Courier New', monospace;
+}
+
+.inputform{
+  display: block;
+}
+
+.result{
+  color:#069
+}

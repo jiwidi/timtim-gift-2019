@@ -5,7 +5,7 @@
  */
 #mainNav {
   min-height: 56px;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 #mainNav .navbar-toggler {
@@ -57,10 +57,10 @@
     color: rgba(255, 255, 255, 0.75);
   }
   #mainNav .nav-link:active {
-    color: white;
+    color: rgba(255, 255, 255, 0.75);
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    color: rgba(255, 255, 255, 0.75);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #161616;

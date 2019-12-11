@@ -20,7 +20,7 @@
   }
   
   #mainNav .navbar-brand {
-    color: #161616;
+    color: rgba(255, 255, 255, 0.5);
     font-weight: 700;
     padding: .9rem 0;
   }

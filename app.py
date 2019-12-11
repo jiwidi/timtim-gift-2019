@@ -10,25 +10,31 @@ app = Flask(__name__, template_folder='templates')
 
 
 hints = {
-    "1": "What is 1+1",
-    "2": "What is 2+2",
-    "3": "What is 1+1",
-    "4": "What is 2+2",
-    "5": "What is 1+1",
-    "6": "What is 2+2",
-    "7": "What is 1+1",
-    "8": "What is 2+2",
+    "1": "TimTim is hard in the outside but really sweet in the inside like a _ _ _ _ _ _ _ _ _ _",
+    "2": "In this sudoku: https://imgur.com/SgvaMQj which is the result of multiplying the numbers on the cells with a black circle?",
+    "3": "What is '1'+'1'",
+    "4": "Which is the building number of Jaime's place?",
+    "5": "Bonanit",
+    "6": "What has to be broken before you can eat it?",
+    "7": "What word is spelled wrong in every dictionary?",
+    "8": "Hola",
+    "9": "How much does Jaime misses you?",
+    "10": "Caca",
+    "11": "Tu regalo de navidad esta debajo de la almohada"
 }
 
 hintsAnswers = {
-    "1": "2",
-    "2": "4",
-    "3": "2",
-    "4": "4",
-    "5": "2",
-    "6": "4",
-    "7": "2",
-    "8": "4",
+    "1": "watermelon",
+    "2": "16",
+    "3": "11",
+    "4": "86",
+    "5": "bondia",
+    "6": "egg",
+    "7": "wrong",
+    "8": "guapa",
+    "9": "infinity",
+    "10": "Culo",
+    "11": ""
 }
 
 
@@ -84,7 +90,7 @@ def index():
     #Retrieve current hint
     maxhit = gethintn()
     #Default values for strings
-    puzzlecount = "Solved {}/14 puzzles".format(maxhit)
+    puzzlecount = "Solved {}/{} puzzles".format(maxhit,len(hints))
     return render_template('index.html',hint=hint,hintnumber=hintnumber, backbutton="none", nextbutton="Start!", hintsolved=puzzlecount,textENABLED="none", bigtextL="TimTim christmas puzzle", mediumtextL="Solve the hints and find your christmas gift :) ")
 
 @app.route('/goback')
@@ -92,7 +98,7 @@ def goback():
     #Retrieve current hint
     maxhit = gethintn()
     #Default values for strings
-    puzzlecount = "Solved {}/14 puzzles".format(maxhit)
+    puzzlecount = "Solved {}/11 puzzles".format(maxhit)
     return render_template('index.html',hint=hint,hintnumber=hintnumber, backbutton="none", nextbutton="Start!", hintsolved=puzzlecount,textENABLED="none", bigtextL="TimTim christmas puzzle", mediumtextL="Solve the hints and find your christmas gift :) ")
 
 
@@ -101,7 +107,7 @@ def goback():
 def start():
     #Retrieve current hint
     maxhit = gethintn()
-    puzzlecount = "Solved {}/14 puzzles".format(maxhit)
+    puzzlecount = "Solved {}/{} puzzles".format(maxhit,len(hints))
     #Default values for strings
     bigtext = "Puzzle n{}".format(int(maxhit))
     mediumtext = hints[maxhit]
@@ -113,14 +119,14 @@ def next():
     hitn = request.args.get("hintnumber")
     #Default values for strings
     maxhit = gethintn()
-    puzzlecount = "Solved {}/14 puzzles".format(maxhit)
+    puzzlecount = "Solved {}/{} puzzles".format(maxhit,len(hints))
     bigtext = "Puzzle n{}".format(int(hitn))
     mediumtext = hints[hitn]
     resultText = ""
     nextbutton = "Next" if (int(hitn)+1)<=int(maxhit) else "Validate"
 
     #Checks is okay to solve hint today
-    basedate = "22/11/2019 4:00"
+    basedate = "10/12/2019 23:59"
     basedate = datetime.datetime.strptime(basedate, "%d/%m/%Y %H:%M")
     CurrentDate = datetime.datetime.now()
     basedate = basedate + timedelta(days=int(hitn)) 

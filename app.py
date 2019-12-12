@@ -1,4 +1,4 @@
-#Made with <3
+#Made with <3  hehe
 from flask import Flask, flash, redirect, render_template, request, session, abort
 from random import randint
 import datetime
@@ -172,5 +172,5 @@ def previous():
     resultText = ""
     return render_template('index.html', hint=hint,hintnumber=hintnumber, backbutton="",nextbutton=nextbutton, hintsolved=puzzlecount, bigtextL=bigtext, mediumtextL=mediumtext, result=resultText)
 
-if __name__ == "__main__":
+def create_app():
     app.run(host='0.0.0.0', port=80,debug=True)

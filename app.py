@@ -1,3 +1,4 @@
+#Made with <3
 from flask import Flask, flash, redirect, render_template, request, session, abort
 from random import randint
 import datetime
@@ -126,7 +127,7 @@ def next():
     nextbutton = "Next" if (int(hitn)+1)<=int(maxhit) else "Validate"
 
     #Checks is okay to solve hint today
-    basedate = "10/12/2019 23:59"
+    basedate = "12/12/2019 23:59"
     basedate = datetime.datetime.strptime(basedate, "%d/%m/%Y %H:%M")
     CurrentDate = datetime.datetime.now()
     basedate = basedate + timedelta(days=int(hitn)) 

@@ -19,7 +19,7 @@ hints = {
     "7": "What word is spelled wrong in every dictionary?",
     "8": "Hola",
     "9": "How much does Jaime misses you?",
-    "10": "Caca",
+    "10": "Netflix and chill, Imax and _ _ _ _ _ _",
     "11": "Tu regalo de navidad esta debajo de la almohada"
 }
 
@@ -33,7 +33,7 @@ hintsAnswers = {
     "7": "wrong",
     "8": "guapa",
     "9": "infinity",
-    "10": "Culo",
+    "10": "climax",
     "11": ""
 }
 

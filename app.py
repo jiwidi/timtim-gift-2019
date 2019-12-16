@@ -21,7 +21,7 @@ hints = {
     "8": "Hola",
     "9": "How much does Jaime misses you?",
     "10": "Netflix and chill, Imax and _ _ _ _ _ _",
-    "11": "Tu regalo de navidad esta debajo de la almohada"
+    "11": "Tu regalo de navidad esta donde guardo mi material de acampada, also known to be where I keep thin objects that follow the light "
 }
 
 hintsAnswers = {

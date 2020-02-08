@@ -11,31 +11,9 @@ app = Flask(__name__, template_folder='templates')
 
 
 hints = {
-    "1": "TimTim is hard in the outside but really sweet in the inside like a _ _ _ _ _ _ _ _ _ _",
-    "2": "In this sudoku: https://imgur.com/SgvaMQj which is the result of multiplying the numbers on the cells with a black circle?",
-    "3": "What is '1'+'1'",
-    "4": "Which is the building number of Jaime's place?",
-    "5": "Bonanit",
-    "6": "What has to be broken before you can eat it?",
-    "7": "What kind of tree fits in your hand?",
-    "8": "Hola",
-    "9": "How much does Jaime misses you?",
-    "10": "Netflix and chill, Imax and _ _ _ _ _ _",
-    "11": "Tu regalo de navidad esta en el cajon donde estan los objetos que siguen la luz"
 }
 
 hintsAnswers = {
-    "1": "watermelon",
-    "2": "16",
-    "3": "11",
-    "4": "86",
-    "5": "bondia",
-    "6": "egg",
-    "7": "palm tree",
-    "8": "guapa",
-    "9": "infinity",
-    "10": "climax",
-    "11": ""
 }
 
 

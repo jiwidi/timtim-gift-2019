@@ -8,6 +8,6 @@ Find it at http://timtim.gift/
 Hosted with waitress on my pi4
 
 run:
-'''python
- sudo waitress-serve --call "app:create_app" &
-'''
+```
+sudo waitress-serve --call "app:create_app" &
+```
